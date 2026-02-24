@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
-<<<<<<< HEAD
+
 # PostgreSQL connection details
 POSTGRESQL_HOST = "localhost"
 POSTGRESQL_PORT = 5432
@@ -28,7 +28,3 @@ def get_db():
         yield db
     finally:
         db.close()
-=======
-client = motor.motor_asyncio.AsyncIOMotorClient("mongodb+srv://ditoanggitac:EAiat6mC5n4MS725@praktikum.dzzicwj.mongodb.net/")
-db = client.duodb
->>>>>>> 89e503170e7fea3d33573cab50bd5306594bb897
