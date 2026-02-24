@@ -1,8 +1,15 @@
+import logging
 from fastapi import FastAPI
 from app.routers.akun import router as akun_router
 from app.routers.level_akses import router as level_akses_router
 from app.routers.detail_akun import router as detail_akun_router
 from app.routers.auth import router as auth_router
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
 
 app = FastAPI()
 from fastapi.middleware.cors import CORSMiddleware
